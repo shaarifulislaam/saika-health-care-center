@@ -1,10 +1,14 @@
 import React from "react";
 import { Col, Form, Row, Button } from "react-bootstrap";
-import useFirebase from "../../../hook/useFirebase";
+import useAuth from "../../../hook/useAuth/useAuth";
+
 
 const Login = () => {
-  const {user, signInUsingGoogle } = useFirebase();
+
+  const {user, signInUsingGoogle } = useAuth();
+
   return (
+
     <Form className="mx-auto mt-4 w-50">
       <h3 className="text-info text-center">Please Login</h3>
       <p>{user.email}</p>
@@ -28,7 +32,7 @@ const Login = () => {
 
       <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
         <Col sm={{ span: 10, offset: 2 }}>
-          <Form.Check className="text-start" label="Remember me" />
+          <Form.Check className="text-start" label="Already Registered" />
         </Col>
       </Form.Group>
 

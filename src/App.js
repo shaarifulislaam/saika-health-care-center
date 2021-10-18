@@ -10,11 +10,13 @@ import Services from './pages/home/Services/Services';
 import Doctors from './pages/home/Doctors/Doctors';
 import About from './pages/home/AboutUs/About';
 import Login from './pages/login/login/Login';
+import AuthProvider from './context/AuthProvider';
 
 function App() {
   return (
     <div className="App">
-   <Router>
+  <AuthProvider>
+  <Router>
      <Header></Header>
    <Switch>
      <Route exact path="/">
@@ -41,6 +43,7 @@ function App() {
    </Switch>
     <Footer></Footer>
    </Router>
+  </AuthProvider>
     </div>
   );
 }
