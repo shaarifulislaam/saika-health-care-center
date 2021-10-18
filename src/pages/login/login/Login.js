@@ -5,8 +5,9 @@ import useAuth from "../../../hook/useAuth/useAuth";
 
 const Login = () => {
 
-  const {user, signInUsingGoogle , userRegisterHandle ,loginProcessHandle} = useAuth();
-console.log(user)
+  const { signInUsingGoogle , userRegisterHandle ,loginProcessHandle ,handleNameChange} = useAuth();
+
+ 
   const [email , setEmail] = useState("");
   const [password , setPassword] = useState("");
   const [isLogin , setIsLogin] = useState(false);
@@ -17,21 +18,37 @@ console.log(user)
   const passwordHandle = (e) => {
       setPassword(e.target.value);
   }
-  // console.log(email , password)
+  
+  const toggleLogin = (e) => {
+    setIsLogin(e.target.checked);
+  };
   const registerHandle = (e) =>{
     e.preventDefault();
-        userRegisterHandle(email , password); 
+      isLogin ?
+      loginProcessHandle(email, password) 
+      : userRegisterHandle(email , password);;
   }
-  const signInHandle = (e) =>{
-    e.preventDefault();
-    loginProcessHandle(email, password)
-  }
-
+  
   return (
 
-    <Form className="mx-auto mt-4 w-50" >
-        <p>User Email :{user.email}</p>
+    <Form className="mx-auto mt-4 w-50" onSubmit={registerHandle}>
+     
       <h3 className="text-info text-center">Please {isLogin ? "Login" : "Register"}</h3>
+      {
+     !isLogin &&
+     <Form.Group as={Row} className="mb-3" controlId="formHorizontalName">
+     <Form.Label column sm={2}>
+       Name
+     </Form.Label>
+     <Col sm={10}>
+       <Form.Control 
+     onBlur={handleNameChange}
+        
+        placeholder="Your name"
+         required />
+     </Col>
+   </Form.Group>
+  }
       <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
         <Form.Label column sm={2}>
           Email
@@ -60,14 +77,14 @@ console.log(user)
 
       <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
         <Col sm={{ span: 10, offset: 2 }}>
-          <Form.Check className="text-start" label="Already Registered ?" />
+          <Form.Check onChange={toggleLogin} className="text-start" label="Already Registered ?" />
         </Col>
       </Form.Group>
 
       <Form.Group as={Row} className="mb-3">
         <Col sm={{ span: 10, offset: 2 }}>
-          <Button onClick={registerHandle} type="submit">Register</Button>
-          <Button onClick={signInHandle} className="mx-2" type="submit">Login</Button>
+          <Button  type="submit">{isLogin ? "login" : "Register"}</Button>
+         
         </Col>
       </Form.Group>
 

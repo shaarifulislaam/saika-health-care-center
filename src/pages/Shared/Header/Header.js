@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
@@ -7,7 +7,8 @@ import useAuth from "../../../hook/useAuth/useAuth";
 import logo from "../../../images/logo/logo.png";
 
 const Header = () => {
-  const { user, logOut } = useAuth();
+  const { user, logOut ,name } = useAuth();
+ 
   return (
     <>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -36,7 +37,7 @@ const Header = () => {
               Doctors
             </Nav.Link>
 
-            {user?.email ? 
+            {  user?.email ? 
               <Button onClick={logOut} variant="light">
                 Log Out
               </Button>
@@ -46,7 +47,7 @@ const Header = () => {
               </Nav.Link>
             }
             <Navbar.Text className="mx-2">
-              Signed in as: <a to="#login">{user.displayName}</a>
+              Signed in as: <Link to="#login">{ user.email  ? user.displayName || name : ''}</Link>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>
