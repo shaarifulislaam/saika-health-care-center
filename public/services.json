@@ -1,0 +1,72 @@
+[
+    {
+      "id": 11154,
+      "name": "Microsoft Office",
+      "img": "https://i.ibb.co/hsW453z/office.jpg",
+      "price": 200
+    },
+    {
+      "id": 11112,
+      "name": "Web Design",
+      "img": "https://i.ibb.co/x81TGxr/top11.png",
+      "price": 700
+    }, {
+      "id": 1155112,
+      "name": "Graphics Design",
+      "img": "https://i.ibb.co/tch9z9b/invite.jpg",
+      "price": 90
+    }, {
+      "id": 1116712,
+      "name": "Facebook Marketing",
+      "img": "https://i.ibb.co/qB6VKpj/austin-distel-t-LZh-FRLj6n-Y-unsplash.jpg",
+      "price": 990
+    } ,{
+      "id": 11184412,
+      "name": "UX UI Design",
+      "img": "https://i.ibb.co/xjxQVPp/download.jpg",
+      "price": 600
+    },{
+        "id": 11778154,
+        "name": "Basic Networking",
+        "img": "https://i.ibb.co/kqpLr8s/taylor-vick-M5tz-Zt-FCOfs-unsplash.jpg",
+        "price": 200
+      },
+      {
+        "id": 1133112111,
+        "name": "Video Editing",
+        "img": "https://i.ibb.co/cTMkm6G/mark-cruz-VW2o-U66mwbc-unsplash.jpg",
+        "price":500
+      }, {
+        "id": 1112212,
+        "name": "Spoken English",
+        "img": "https://i.ibb.co/S6vcc7z/download-1.jpg",
+        "price": 400
+      }, {
+        "id": 1133112,
+        "name": "English Grammer",
+        "img": "https://i.ibb.co/QYLBs7X/images.jpg",
+        "price": 300
+      } ,{
+        "id": 11100112,
+        "name": "Content Writing",
+        "img": "https://i.ibb.co/qF1RRFP/convertkit-BPZ1hu-Yak7c-unsplash.jpg",
+        "price": 60
+      }
+      ,{
+        "id": 1110000112,
+        "name": "Hardware & Troubleshooting",
+        "img": "https://i.ibb.co/Gv37jCK/download-2.jpg",
+        "price": 100
+      }
+      ,{
+        "id": 111110000112,
+        "name": "IElTS",
+        "img": "https://i.ibb.co/W3b1BXC/download.png",
+        "price": 2000
+      },{
+        "id": 11101120,
+        "name": "Photograpy",
+        "img": "https://i.ibb.co/7g8pnh7/hector-achautla-3i-Pica-Y1-JLQ-unsplash.jpg",
+        "price": 300
+      }
+  ]

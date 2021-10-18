@@ -16,19 +16,25 @@ firebaseAuthInitialize();
 const useFirebase = () => {
   const [user, setUser] = useState({});
   const [name , setName] = useState('');
+  const [isLoading , setIsLoading] = useState(true);
 
   const auth = getAuth();
 
   const signInUsingGoogle = () => {
     const googleProvider = new GoogleAuthProvider();
-    signInWithPopup(auth, googleProvider).then((result) => {
+    setIsLoading(true)
+    return signInWithPopup(auth, googleProvider)
+    .finally(()=> setIsLoading(false));
+    /* .then((result) => {
       setUser(result.user);
       console.log(result.user);
-    });
+    }); */
   };
 
   const logOut = () => {
-    signOut(auth).then(() => {
+    signOut(auth)
+    setIsLoading(true)
+    .then(() => {
       // Sign-out successful.
     });
   };
@@ -41,6 +47,7 @@ const useFirebase = () => {
       } else {
         setUser({});
       }
+      setIsLoading(false);
     });
     return () => unSubscribed;
   }, []);
@@ -80,11 +87,12 @@ const useFirebase = () => {
     user,
     signInUsingGoogle,
     logOut,
+    isLoading,
     userRegisterHandle,
     loginProcessHandle,
     handleNameChange,
-    name
-    
+    name,
+    setUser
   };
 };
 

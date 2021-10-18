@@ -1,16 +1,29 @@
 import React, { useState } from "react";
 import { Col, Form, Row, Button } from "react-bootstrap";
+import { useHistory, useLocation } from "react-router";
 import useAuth from "../../../hook/useAuth/useAuth";
 
 
 const Login = () => {
 
-  const { signInUsingGoogle , userRegisterHandle ,loginProcessHandle ,handleNameChange} = useAuth();
+  const { signInUsingGoogle , userRegisterHandle ,loginProcessHandle ,handleNameChange , setUser} = useAuth();
 
- 
+  const history = useHistory();
+  const location = useLocation();
+
+  const redirect_url = location.state?.from || "/home";
+
   const [email , setEmail] = useState("");
   const [password , setPassword] = useState("");
   const [isLogin , setIsLogin] = useState(false);
+
+  const handleGoogleSign = () => {
+    signInUsingGoogle()
+    .then((result) => {
+      setUser(result.user)
+      history.push(redirect_url);
+    });
+  }
 
   const emailHandle = (e) => {
      setEmail(e.target.value);
@@ -93,7 +106,7 @@ const Login = () => {
       </div>
 
       <div className="mx-auto text-center mt-4">
-        <Button onClick={signInUsingGoogle} variant="primary">
+        <Button onClick={handleGoogleSign} variant="primary">
           Google Sign In
         </Button>
       </div>
