@@ -18,7 +18,7 @@ import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-custom">
       <AuthProvider>
         <Router>
           <Header></Header>

@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div className="col-md-12 col-lg-4 col-12">
-          <div className="mt-5 ms-5">
+          <div className="mt-lg-5 mt-sm-2 mt-md-2 ms-lg-5 ms-md-0 sm-0">
             <ul className="footer">
               <li>
                 {" "}
@@ -63,6 +63,12 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div class="all-icon">
+           <Link   to="https://www.facebook.com/"><i class="fab fa-facebook"></i></Link>
+            <Link   to="https://www.instagram.com/"><i class="fab fa-instagram"></i></Link>
+           <Link  to="https://twitter.com/home"> <i class="fab fa-twitter"></i></Link>
+            <Link to="https://www.youtube.com/"><i class="fab fa-youtube"></i></Link>
+        </div>
         </div>
 
         <div className="col-md-12 col-lg-4 col-12">
@@ -70,7 +76,7 @@ const Footer = () => {
             <h4 className="text-white my-3 order-1 order-lg-2 order-md-2">
               Get the App
             </h4>
-            <Link target="_blank" href="https://www.apple.com/app-store/">
+            <Link target="_blank" to="https://www.apple.com/app-store/">
               <img
                 className="my-3 "
                 src="https://i.ibb.co/8j2SFB5/App-Store-Badge.png"
@@ -78,7 +84,7 @@ const Footer = () => {
               />
             </Link>
             <br />
-            <Link targ et="_blank" href="https://play.google.com/store/apps">
+            <Link target et="_blank" to="https://play.google.com/store/apps">
               <img
                 src="https://i.ibb.co/TRzp92C/Google-Play-Badge.png"
                 alt=""
@@ -87,6 +93,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="text-center pb-3"><small>© sharifulmamun7@gmail.com</small></p>
     </div>
   );
 };

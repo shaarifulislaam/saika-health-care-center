@@ -12,12 +12,12 @@ const Service = ({service}) => {
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Card.Text>
-           {description.slice(0,150)}
+           {description.slice(0,120)}
           </Card.Text>
           <p><small>Price : {price}</small></p>
         </Card.Body>
         <Card.Footer className="border border-0 bg-white">
-        <Link to={`/serviceDetails/${id}`}><Button variant="success w-100"><span><i class="fas fa-info-circle"></i> Details</span></Button></Link>
+        <Link to={`/serviceDetails/${id}`}><Button variant="info w-100"><span><i class="fas fa-info-circle"></i> Details</span></Button></Link>
     </Card.Footer>
       </Card>
     </Col>

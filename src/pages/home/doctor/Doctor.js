@@ -19,7 +19,7 @@ const Doctor = ({doctor}) => {
             <p><small>Visit : {visit}</small></p>
           </Card.Body>
           <Card.Footer className="border border-0 bg-white">
-          <Link to={`/doctorDetails/${id}`}><Button variant="success w-100"><span><i class="fas fa-calendar-check"></i> Appointment</span></Button></Link>
+          <Link to={`/doctorDetails/${id}`}><Button variant="primary w-100"><span><i class="fas fa-calendar-check"></i> Appointment</span></Button></Link>
       </Card.Footer>
         </Card>
       </Col>

@@ -3,7 +3,7 @@ import img from "../../../images/about/about us.jpg";
 const About = () => {
   return (
     <div id="about">
-      <h1 className="text-center my-3">About Us</h1>
+      <h1 className="text-center my-5 text-info">About Us</h1>
       <div className="row">
         <div className="col-md-12  col-lg-6 col-12">
           <div className="m-2 px-5">
