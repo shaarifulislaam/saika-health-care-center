@@ -16,6 +16,7 @@ const Login = () => {
   const [email , setEmail] = useState("");
   const [password , setPassword] = useState("");
   const [isLogin , setIsLogin] = useState(false);
+  const [error, setError] = useState("");
 
   const handleGoogleSign = () => {
     signInUsingGoogle()
@@ -37,6 +38,10 @@ const Login = () => {
   };
   const registerHandle = (e) =>{
     e.preventDefault();
+    if (password.length < 6) {
+      setError("Password must be atleast 6 characters long");
+      return;
+    }
       isLogin ?
       loginProcessHandle(email, password) 
       : userRegisterHandle(email , password);;
@@ -92,6 +97,10 @@ const Login = () => {
         <Col sm={{ span: 10, offset: 2 }}>
           <Form.Check onChange={toggleLogin} className="text-start" label="Already Registered ?" />
         </Col>
+      </Form.Group>
+
+      <Form.Group as={Row} className="mb-3 text-danger">
+        {error}
       </Form.Group>
 
       <Form.Group as={Row} className="mb-3">

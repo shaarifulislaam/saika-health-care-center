@@ -17,15 +17,17 @@ const useFirebase = () => {
   const [user, setUser] = useState({});
   const [name, setName] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState("");
+ 
 
   const auth = getAuth();
 
   const signInUsingGoogle = () => {
     const googleProvider = new GoogleAuthProvider();
     setIsLoading(true);
-    return signInWithPopup(auth, googleProvider).finally(() =>
-      setIsLoading(false)
-    );
+    return signInWithPopup(auth, googleProvider)
+    .finally(() => setIsLoading(false))
+    
   };
 
   //logout
@@ -49,6 +51,8 @@ const useFirebase = () => {
     return () => unSubscribed;
   }, []);
 
+
+  //handle register
   const userRegisterHandle = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
@@ -56,9 +60,10 @@ const useFirebase = () => {
       })
       .catch((error) => {
         const errorMessage = error.message;
-        console.log(errorMessage);
+       setError(errorMessage);
       });
   };
+  //handle process
   const loginProcessHandle = (email, password) => {
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
@@ -67,10 +72,10 @@ const useFirebase = () => {
       })
       .catch((error) => {
         const errorMessage = error.message;
-        console.log(errorMessage);
+        setError(errorMessage);
       });
   };
-
+  //set userName
   const setUserName = () => {
     updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
   };

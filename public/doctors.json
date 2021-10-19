@@ -11,13 +11,13 @@
       "name": "Dr Rakibul Hasan",
       "img": "https://i.ibb.co/KN2bFDG/doctor-4.png",
       "degree" : "MD (Endocrinology, BIRDM) ",
-      "specialist" : "Diabetology & Endocrinology",
+      "specialist" : "Diabetology ",
         "visit": 800
     }, {
       "id": " 1003",
       "name": "Dr Salma Ara",
       "img": "https://i.ibb.co/VW7GgrX/doctor-5.png",
-      "degree" : "MBBS, FCPS(Med), MD(Gastro) ",
+      "degree" : "MBBS, FCPS(Med) ",
       "specialist" : "Gastroenterology",
       "visit": 600
     }, {
@@ -31,7 +31,7 @@
       "id": " 1005",
       "name": "Dr. Nowsin Binte",
       "img": "https://i.ibb.co/5cqyNbf/bermix-studio-y-WYi-NNK-t-OI-unsplash.jpg",
-      "degree" : "MBBS (Dhaka), MD (Cardiology)",
+      "degree" : "MBBS ,MD(Cardiology)",
       "specialist" : "Cardiology",
       "visit": 2000
     }, {
@@ -39,7 +39,7 @@
       "name": "Dr. S M Foysal",
       "img": "https://i.ibb.co/bbHb2Cr/Portrait-of-a-smiling-male-doctor-dressed-in-uniform-with-stethoscope-standing-and-pointing-finger-a.jpg",
       
-      "degree" : "MBBS (DMC), MS (ORTHO) ",
+      "degree" : "MBBS, MS (ORTHO) ",
       "specialist" : "Orthopedic & Trauma",
       "visit": 1500
     }

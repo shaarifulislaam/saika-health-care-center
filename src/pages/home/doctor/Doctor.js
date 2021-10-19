@@ -16,7 +16,7 @@ const Doctor = ({doctor}) => {
             <Card.Text>
              {specialist}
             </Card.Text>
-            <p><small>Visit : {visit}</small></p>
+            <p><small>Visit : {visit} BDT</small></p>
           </Card.Body>
           <Card.Footer className="border border-0 bg-white">
           <Link to={`/doctorDetails/${id}`}><Button variant="primary w-100"><span><i class="fas fa-calendar-check"></i> Appointment</span></Button></Link>

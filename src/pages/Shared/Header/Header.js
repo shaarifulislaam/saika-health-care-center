@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
@@ -43,18 +43,26 @@ const Header = () => {
               Contact Us
             </Nav.Link>
 
-            {  user?.email || user?.displayName ? 
+            {user?.email || user?.displayName ? (
               <Button onClick={logOut} variant="light">
-               <span><i class="fas fa-sign-out-alt"></i> LogOut </span>
+                <span>
+                  <i class="fas fa-sign-out-alt"></i> LogOut{" "}
+                </span>
               </Button>
-             : 
+            ) : (
               <Nav.Link as={Link} to="/login">
-              <span> <i class="fas fa-sign-in-alt"></i> Login</span>
+                <span>
+                  {" "}
+                  <i class="fas fa-sign-in-alt"></i> Login
+                </span>
               </Nav.Link>
-            }
-           
+            )}
+
             <Navbar.Text className="mx-2">
-              Signed in as: <Link to="#login">{(user.email || user.displayName) && user.displayName  }</Link>
+              Signed in as:{" "}
+              <Link to="#login">
+                {(user.email || user.displayName) && user.displayName}
+              </Link>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>

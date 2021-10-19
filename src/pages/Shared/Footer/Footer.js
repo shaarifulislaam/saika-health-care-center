@@ -4,7 +4,7 @@ import logo from "../../../images/logo/logo.png";
 import './footer.css';
 const Footer = () => {
   return (
-    <div className="bg-dark mt-3 text-white">
+    <div className="bg-dark mt-5  text-white">
       <div className="row container">
         <div className="col-md-12  col-lg-4 col-12">
           <div>
@@ -18,19 +18,19 @@ const Footer = () => {
             <p>
               <span>
                 <i class="fas fa-address-card"></i>
-              </span>{" "}
+              </span>
               Address: xyz-1200 Dhaka
             </p>
             <p>
               <span>
                 <i class="fas fa-phone"></i>
-              </span>{" "}
+              </span>
               Hotline: 64-4444555
             </p>
             <p>
               <span>
                 <i class="fas fa-envelope"></i>
-              </span>{" "}
+              </span>
               info : info@shhc.com
             </p>
           </div>
@@ -93,7 +93,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center pb-3"><small>© sharifulmamun7@gmail.com</small></p>
+      <p className="text-center pb-4"><small>© sharifulmamun7@gmail.com</small></p>
     </div>
   );
 };
