@@ -37,7 +37,7 @@ const Header = () => {
               Doctors
             </Nav.Link>
 
-            {  user?.email ? 
+            {  user?.email || user?.displayName ? 
               <Button onClick={logOut} variant="light">
                 Log Out
               </Button>
@@ -47,7 +47,7 @@ const Header = () => {
               </Nav.Link>
             }
             <Navbar.Text className="mx-2">
-              Signed in as: <Link to="#login">{ user.email  ? user.displayName || name : ''}</Link>
+              Signed in as: <Link to="#login">{ user.email || user.displayName ? user.displayName || name : ''}</Link>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>

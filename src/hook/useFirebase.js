@@ -6,7 +6,7 @@ import {
   signOut,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  updateProfile
+  updateProfile,
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import firebaseAuthInitialize from "../pages/login/firebase/firebase.init";
@@ -15,28 +15,28 @@ firebaseAuthInitialize();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
-  const [name , setName] = useState('');
-  const [isLoading , setIsLoading] = useState(true);
+  const [name, setName] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   const auth = getAuth();
 
   const signInUsingGoogle = () => {
     const googleProvider = new GoogleAuthProvider();
-    setIsLoading(true)
-    return signInWithPopup(auth, googleProvider)
-    .finally(()=> setIsLoading(false));
+    setIsLoading(true);
+    return signInWithPopup(auth, googleProvider).finally(() =>
+      setIsLoading(false)
+    );
     /* .then((result) => {
       setUser(result.user);
       console.log(result.user);
     }); */
   };
 
+  //logout
   const logOut = () => {
     signOut(auth)
-    setIsLoading(true)
-    .then(() => {
-      // Sign-out successful.
-    });
+      .then(() => {})
+      .finally(() => setIsLoading(false));
   };
 
   //observer
@@ -56,8 +56,6 @@ const useFirebase = () => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         setUser(result.user);
-        
-       
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -76,13 +74,12 @@ const useFirebase = () => {
       });
   };
 
-  const setUserName = () =>{
-    updateProfile(auth.currentUser , {displayName:name})
-    .then(result =>{})
-  }
-  const handleNameChange = e =>{
+  const setUserName = () => {
+    updateProfile(auth.currentUser, { displayName: name }).then((result) => {});
+  };
+  const handleNameChange = (e) => {
     setName(e.target.value);
-  }
+  };
   return {
     user,
     signInUsingGoogle,
@@ -92,7 +89,7 @@ const useFirebase = () => {
     loginProcessHandle,
     handleNameChange,
     name,
-    setUser
+    setUser,
   };
 };
 

@@ -21,6 +21,7 @@ const Login = () => {
     signInUsingGoogle()
     .then((result) => {
       setUser(result.user)
+      console.log(result.user)
       history.push(redirect_url);
     });
   }
