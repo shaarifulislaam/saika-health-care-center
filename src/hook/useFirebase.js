@@ -26,14 +26,11 @@ const useFirebase = () => {
     return signInWithPopup(auth, googleProvider).finally(() =>
       setIsLoading(false)
     );
-    /* .then((result) => {
-      setUser(result.user);
-      console.log(result.user);
-    }); */
   };
 
   //logout
   const logOut = () => {
+    setIsLoading(true)
     signOut(auth)
       .then(() => {})
       .finally(() => setIsLoading(false));

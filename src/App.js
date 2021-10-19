@@ -12,6 +12,9 @@ import Login from "./pages/login/login/Login";
 import AuthProvider from "./context/AuthProvider";
 import ServiceDetails from "./pages/home/ServiceDetails/ServiceDetails";
 import PrivateRoute from "./pages/login/privateRoute/PrivateRoute";
+import DoctorDetails from "./pages/home/doctorsDetails/DoctorDetails";
+import Blog from "./pages/Blog/Blog";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -38,8 +41,17 @@ function App() {
             <Route exact path="/doctors">
               <Doctors></Doctors>
             </Route>
+            <PrivateRoute exact path="/doctorDetails/:id">
+              <DoctorDetails></DoctorDetails>
+            </PrivateRoute>
             <Route exact path="/about">
               <About></About>
+            </Route>
+            <Route exact path="/blog">
+              <Blog></Blog>
+            </Route>
+            <Route exact path="/contactUs">
+              <Contact></Contact>
             </Route>
             <Route exact path="*">
               <NotFound></NotFound>

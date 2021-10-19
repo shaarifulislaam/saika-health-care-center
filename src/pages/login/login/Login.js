@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Col, Form, Row, Button } from "react-bootstrap";
 import { useHistory, useLocation } from "react-router";
 import useAuth from "../../../hook/useAuth/useAuth";
-
+import iconGoogle from '../../../images/icon/google.svg'
 
 const Login = () => {
 
@@ -21,7 +21,6 @@ const Login = () => {
     signInUsingGoogle()
     .then((result) => {
       setUser(result.user)
-      console.log(result.user)
       history.push(redirect_url);
     });
   }
@@ -97,7 +96,7 @@ const Login = () => {
 
       <Form.Group as={Row} className="mb-3">
         <Col sm={{ span: 10, offset: 2 }}>
-          <Button  type="submit">{isLogin ? "login" : "Register"}</Button>
+          <Button  type="submit"><span><i class="fas fa-user-plus"></i> {isLogin ? "login" : "Register"}</span></Button>
          
         </Col>
       </Form.Group>
@@ -107,8 +106,8 @@ const Login = () => {
       </div>
 
       <div className="mx-auto text-center mt-4">
-        <Button onClick={handleGoogleSign} variant="primary">
-          Google Sign In
+        <Button onClick={handleGoogleSign} variant="white border border-1 border-gray">
+         <span><img src={iconGoogle} alt="" /></span> 
         </Button>
       </div>
     </Form>

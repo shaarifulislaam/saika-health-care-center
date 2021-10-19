@@ -4,8 +4,8 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 const NotFound = () => {
     return (
-        <div>
-          <img src={error} alt="" />
+        <div >
+          <img  src={error} alt="" />
          <Link to="/home"> <Button  variant="info">Go Home Page</Button></Link>
         </div>
     );

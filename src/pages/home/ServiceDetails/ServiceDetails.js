@@ -12,20 +12,18 @@ const ServiceDetails = () => {
   }, []);
 
   const item = data.filter((dt) => dt.id == id);
-  console.log(item);
+ 
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src={item[0]?.img} />
       <Card.Body>
         <Card.Title>{item[0]?.name}</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        {item[0]?.description}
         </Card.Text>
         <p>
           <small>Price : {item[0]?.price}</small>
         </p>
-        <Button variant="primary">Select</Button>
       </Card.Body>
     </Card>
   );
