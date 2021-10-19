@@ -1,72 +1,65 @@
 [
     {
-      "id": 11154,
-      "name": "Microsoft Office",
-      "img": "https://i.ibb.co/hsW453z/office.jpg",
-      "price": 200
+      "id": " 1aa115bb4",
+      "name": "Digital X-Ray",
+      "img": "https://i.ibb.co/Y33VV1D/service-1.png",
+      "description" : "Digital X-Ray Services is a full-line service company offering affordable prices while maintaining high quality to meet all of your diagnostic imaging equipment service needs. ",
+      "price": 1500
     },
     {
-      "id": 11112,
-      "name": "Web Design",
-      "img": "https://i.ibb.co/x81TGxr/top11.png",
-      "price": 700
-    }, {
-      "id": 1155112,
-      "name": "Graphics Design",
-      "img": "https://i.ibb.co/tch9z9b/invite.jpg",
-      "price": 90
-    }, {
-      "id": 1116712,
-      "name": "Facebook Marketing",
-      "img": "https://i.ibb.co/qB6VKpj/austin-distel-t-LZh-FRLj6n-Y-unsplash.jpg",
-      "price": 990
-    } ,{
-      "id": 11184412,
-      "name": "UX UI Design",
-      "img": "https://i.ibb.co/xjxQVPp/download.jpg",
-      "price": 600
-    },{
-        "id": 11778154,
-        "name": "Basic Networking",
-        "img": "https://i.ibb.co/kqpLr8s/taylor-vick-M5tz-Zt-FCOfs-unsplash.jpg",
-        "price": 200
-      },
-      {
-        "id": 1133112111,
-        "name": "Video Editing",
-        "img": "https://i.ibb.co/cTMkm6G/mark-cruz-VW2o-U66mwbc-unsplash.jpg",
-        "price":500
-      }, {
-        "id": 1112212,
-        "name": "Spoken English",
-        "img": "https://i.ibb.co/S6vcc7z/download-1.jpg",
-        "price": 400
-      }, {
-        "id": 1133112,
-        "name": "English Grammer",
-        "img": "https://i.ibb.co/QYLBs7X/images.jpg",
-        "price": 300
-      } ,{
-        "id": 11100112,
-        "name": "Content Writing",
-        "img": "https://i.ibb.co/qF1RRFP/convertkit-BPZ1hu-Yak7c-unsplash.jpg",
-        "price": 60
-      }
-      ,{
-        "id": 1110000112,
-        "name": "Hardware & Troubleshooting",
-        "img": "https://i.ibb.co/Gv37jCK/download-2.jpg",
-        "price": 100
-      }
-      ,{
-        "id": 111110000112,
-        "name": "IElTS",
-        "img": "https://i.ibb.co/W3b1BXC/download.png",
-        "price": 2000
-      },{
-        "id": 11101120,
-        "name": "Photograpy",
-        "img": "https://i.ibb.co/7g8pnh7/hector-achautla-3i-Pica-Y1-JLQ-unsplash.jpg",
-        "price": 300
-      }
+      "id": "111121ddhh333",
+      "name": "MRI",
+      "img": "https://i.ibb.co/HgCg1vr/national-cancer-institute-f2a-DTqfnqf-E-unsplash.png",
+      "description" :" Magnetic resonance imaging is a medical imaging technique used in radiology to form pictures of the anatomy and the physiological processes of the body. MRI scanners use strong magnetic fields, magnetic field gradients, and radio waves to generate images of the organs in the body." ,
+      "price": 15000
+    },
+    {
+      "id": "1111kkka2hh333",
+      "name": "CT SCAN",
+      "img": "https://i.ibb.co/0js1fzF/portrait-young-medical-doctor-analyzing-ct-scan.png",
+      "description" :" A CT scan or computed tomography scan is a medical imaging technique used in radiology to get detailed images of the body noninvasively for diagnostic purposes. The personnel that perform CT scans are called radiographers or radiology technologists." ,
+      "price": 4000
+    },
+    {
+      "id": "11112hh333xxqq12",
+      "name": "Ultrasonography",
+      "img": "https://i.ibb.co/tYNDrvB/scientist-putting-blood-sample-from-test-tube-with-micropipette-petri-dish-analysing-chemical-reacti.png",
+      "description" :"Medical ultrasound includes diagnostic imaging techniques, as well as therapeutic applications of ultrasound. In diagnosis, it is used to create an image of internal body structures such as tendons, muscles, joints, blood vessels, and internal organs." ,
+      "price": 2000
+    },
+    {
+      "id": "11112hwqh333",
+      "name": "Endoscopy",
+      "img": "https://i.ibb.co/LPtGH6m/Endoscopy-start.png",
+      "description" :" An endoscopy is a procedure where organs inside your body are looked at using an instrument called an endoscope. An endoscope is a long, thin, flexible tube that has a light and camera at one end. Images of the inside of your body are shown on a television screen." ,
+      "price": 1200
+    },
+    {
+      "id": "11112hh333",
+      "name": "Procalcitonin",
+      "img": "https://i.ibb.co/c3JnpMs/scientist-putting-blood-sample-from-test-tube-with-micropipette-petri-dish-analysing-chemical-reacti.png",
+      "description" :" Procalcitonin is a substance produced by many types of cells in the body, often in response to bacterial infections but also in response to tissue injury. The level of procalcitonin in the blood can increase significantly in systemic bacterial infections and sepsis." ,
+      "price": 2500
+    },
+    {
+      "id": "11oo112hh333555",
+      "name": "Covid Test",
+      "img": "https://i.ibb.co/1QCZWG5/3871126.png",
+      "description" :" Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment. However, some will become seriously ill and require medical attention." ,
+      "price": 3000
+    },
+    {
+      "id": "11112hhvvv333",
+      "name":"Lactate dehydrogenase",
+      "img": "https://i.ibb.co/Pxxk9Sp/scientist-putting-blood-sample-from-test-tube-with-micropipette-petri-dish-analysing-chemical-reacti.png",
+      "description" :" Lactate dehydrogenase is an enzyme found in nearly all living cells. LDH catalyzes the conversion of lactate to pyruvate and back, as it converts NAD⁺ to NADH and back. A dehydrogenase is an enzyme that transfers a hydride from one molecule to another. LDH exists in four distinct enzyme classes." ,
+      "price": 2500
+    },
+    {
+      "id": "11wwaa112hh333",
+      "name": "Ferritin",
+      "img": "https://i.ibb.co/VwVKV9b/close-up-doctor-holding-blood-sample.png",
+      "description" :" Ferritin is a protein that contains iron and is the primary form of iron stored inside of cells. The small amount of ferritin that is released and circulates in the blood is a reflection of the total amount of iron stored in the body. This test measures the amount of ferritin in the blood" ,
+      "price": 900
+    }
   ]

@@ -12,7 +12,7 @@ fetch('/services.json')
     return (
         <div id="services">
          <h1 className="text-center text-info my-3">Our Services </h1>
-           <Row xs={1} md={3} className="g-3">
+           <Row xs={1} md={2} xl={3} className="g-3 container-lg  mx-lg-auto mx-md-auto mx-0">
            {
                services.map(service => <Service
                key={service.id}
