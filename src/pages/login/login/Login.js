@@ -46,6 +46,7 @@ const Login = () => {
   //handle register
   const registerHandle = (e) =>{
     e.preventDefault();
+    history.push(redirect_url);
     if (password.length < 6) {
       setError("Password must be atLeast 6 characters long");
       return;

@@ -54,6 +54,7 @@ const useFirebase = () => {
 
   //handle register
   const userRegisterHandle = (email, password) => {
+    setIsLoading(true)
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         setUser(result.user);
@@ -61,10 +62,12 @@ const useFirebase = () => {
       .catch((error) => {
         const errorMessage = error.message;
        setError(errorMessage);
-      });
+      })
+      .finally(() => setIsLoading(false));
   };
   //handle process
   const loginProcessHandle = (email, password) => {
+    setIsLoading(true)
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
         setUser(result.user);
@@ -73,7 +76,8 @@ const useFirebase = () => {
       .catch((error) => {
         const errorMessage = error.message;
         setError(errorMessage);
-      });
+      })
+      .finally(() => setIsLoading(false));
   };
   //set userName
   const setUserName = () => {

@@ -17,19 +17,19 @@ const Footer = () => {
           <div>
             <p>
               <span className='mx-2'>
-                <i class="fas fa-address-card"></i>
+                <i className="fas fa-address-card"></i>
               </span>
               Address: xyz-1200 Dhaka
             </p>
             <p>
               <span className='mx-2'>
-                <i class="fas fa-phone"></i>
+                <i className="fas fa-phone"></i>
               </span> 
               Hotline: 64-4444555
             </p>
             <p>
               <span className='mx-2'>
-                <i class="fas fa-envelope"></i>
+                <i className="fas fa-envelope"></i>
               </span>
               info : info@shhc.com
             </p>
@@ -63,19 +63,19 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div class="all-icon">
+          <div className="all-icon">
             <Link to="https://www.facebook.com/">
-              <i class="fab fa-facebook"></i>
+              <i className="fab fa-facebook"></i>
             </Link>
             <Link to="https://www.instagram.com/">
-              <i class="fab fa-instagram"></i>
+              <i className="fab fa-instagram"></i>
             </Link>
             <Link to="https://twitter.com/home">
               {" "}
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </Link>
             <Link to="https://www.youtube.com/">
-              <i class="fab fa-youtube"></i>
+              <i className="fab fa-youtube"></i>
             </Link>
           </div>
         </div>
@@ -85,7 +85,7 @@ const Footer = () => {
             <h4 className="text-white my-3 order-1 order-lg-2 order-md-2">
               Get the App
             </h4>
-            <Link target="_blank" to="https://www.apple.com/app-store/">
+            <Link  to="https://www.apple.com/app-store/">
               <img
                 className="my-3 "
                 src="https://i.ibb.co/8j2SFB5/App-Store-Badge.png"
@@ -93,7 +93,7 @@ const Footer = () => {
               />
             </Link>
             <br />
-            <Link target et="_blank" to="https://play.google.com/store/apps">
+            <Link  to="https://play.google.com/store/apps">
               <img
                 src="https://i.ibb.co/TRzp92C/Google-Play-Badge.png"
                 alt=""
@@ -102,7 +102,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center pb-4">
+      <p className="text-center pb-4 mt-2">
         <small>© sharifulmamun7@gmail.com</small>
       </p>
     </div>

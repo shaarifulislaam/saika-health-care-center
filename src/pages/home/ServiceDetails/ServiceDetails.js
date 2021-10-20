@@ -14,7 +14,7 @@ const ServiceDetails = () => {
   const item = data.filter((dt) => dt.id == id);
  
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card style={{ width: "18rem" , "margin-left": "500px" ,  "margin-top": "20px"}} className="rounded-4 shadow-lg">
       <Card.Img variant="top" src={item[0]?.img} />
       <Card.Body>
         <Card.Title>{item[0]?.name}</Card.Title>

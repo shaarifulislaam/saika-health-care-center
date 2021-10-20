@@ -8,7 +8,7 @@ import logo from "../../../images/logo/logo.png";
 import "./header.css";
 
 const Header = () => {
-  const {name, user, logOut } = useAuth();
+  const { name, user, logOut } = useAuth();
 
   return (
     <>
@@ -57,19 +57,19 @@ const Header = () => {
             {user?.email || user?.displayName ? (
               <Button onClick={logOut} variant="light">
                 <span>
-                  <i class="fas fa-sign-out-alt"></i> LogOut{" "}
+                  <i className="fas fa-sign-out-alt"></i> LogOut{" "}
                 </span>
               </Button>
             ) : (
               <Nav.Link as={Link} to="/login" className="navbar">
                 <span>
-                  <i class="fas fa-sign-in-alt"></i> Login
+                  <i className="fas fa-sign-in-alt"></i> Login
                 </span>
               </Nav.Link>
             )}
 
             <Navbar.Text className="mx-2 ">
-              <Link to="#login" >
+              <Link to="#login">
                 {(user.email || user.displayName) && (user.displayName || name)}
               </Link>
             </Navbar.Text>
