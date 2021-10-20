@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../images/logo/logo.png";
-import './footer.css';
+import "./footer.css";
 const Footer = () => {
   return (
     <div className="bg-dark mt-5  text-white">
@@ -16,19 +16,19 @@ const Footer = () => {
           </div>
           <div>
             <p>
-              <span>
+              <span className='mx-2'>
                 <i class="fas fa-address-card"></i>
               </span>
               Address: xyz-1200 Dhaka
             </p>
             <p>
-              <span>
+              <span className='mx-2'>
                 <i class="fas fa-phone"></i>
-              </span>
+              </span> 
               Hotline: 64-4444555
             </p>
             <p>
-              <span>
+              <span className='mx-2'>
                 <i class="fas fa-envelope"></i>
               </span>
               info : info@shhc.com
@@ -64,11 +64,20 @@ const Footer = () => {
             </ul>
           </div>
           <div class="all-icon">
-           <Link   to="https://www.facebook.com/"><i class="fab fa-facebook"></i></Link>
-            <Link   to="https://www.instagram.com/"><i class="fab fa-instagram"></i></Link>
-           <Link  to="https://twitter.com/home"> <i class="fab fa-twitter"></i></Link>
-            <Link to="https://www.youtube.com/"><i class="fab fa-youtube"></i></Link>
-        </div>
+            <Link to="https://www.facebook.com/">
+              <i class="fab fa-facebook"></i>
+            </Link>
+            <Link to="https://www.instagram.com/">
+              <i class="fab fa-instagram"></i>
+            </Link>
+            <Link to="https://twitter.com/home">
+              {" "}
+              <i class="fab fa-twitter"></i>
+            </Link>
+            <Link to="https://www.youtube.com/">
+              <i class="fab fa-youtube"></i>
+            </Link>
+          </div>
         </div>
 
         <div className="col-md-12 col-lg-4 col-12">
@@ -93,7 +102,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center pb-4"><small>© sharifulmamun7@gmail.com</small></p>
+      <p className="text-center pb-4">
+        <small>© sharifulmamun7@gmail.com</small>
+      </p>
     </div>
   );
 };

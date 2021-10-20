@@ -5,6 +5,7 @@
       "img": "https://i.ibb.co/pnL3WdM/1.png",
       "degree" : "MBBS ",
       "specialist" : "Child",
+      "phone" : "11-220033",
       "visit": 1000
     }, {
       "id": " 1002",
@@ -12,6 +13,7 @@
       "img": "https://i.ibb.co/KN2bFDG/doctor-4.png",
       "degree" : "MD (Endocrinology, BIRDM) ",
       "specialist" : "Diabetology ",
+      "phone" : "11-240033",
         "visit": 800
     }, {
       "id": " 1003",
@@ -19,6 +21,7 @@
       "img": "https://i.ibb.co/VW7GgrX/doctor-5.png",
       "degree" : "MBBS, FCPS(Med) ",
       "specialist" : "Gastroenterology",
+      "phone" : "11-220034",
       "visit": 600
     }, {
       "id": " 1004",
@@ -26,6 +29,7 @@
       "img": "https://i.ibb.co/TYHCyHH/doctor-6.png",
       "degree" : "MBBS, PGDND, DLO ",
       "specialist" : "ENT ( Ear,Nose &Throat)",
+      "phone" : "11-220044",
       "visit": 800
     }, {
       "id": " 1005",
@@ -33,14 +37,15 @@
       "img": "https://i.ibb.co/5cqyNbf/bermix-studio-y-WYi-NNK-t-OI-unsplash.jpg",
       "degree" : "MBBS ,MD(Cardiology)",
       "specialist" : "Cardiology",
+      "phone" : "11-220533",
       "visit": 2000
     }, {
       "id": " 1006",
       "name": "Dr. S M Foysal",
       "img": "https://i.ibb.co/bbHb2Cr/Portrait-of-a-smiling-male-doctor-dressed-in-uniform-with-stethoscope-standing-and-pointing-finger-a.jpg",
-      
       "degree" : "MBBS, MS (ORTHO) ",
       "specialist" : "Orthopedic & Trauma",
+      "phone" : "11-220099",
       "visit": 1500
     }
 ]

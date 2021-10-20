@@ -18,6 +18,8 @@ const Login = () => {
   const [isLogin , setIsLogin] = useState(false);
   const [error, setError] = useState("");
 
+
+  //handle google sign in
   const handleGoogleSign = () => {
     signInUsingGoogle()
     .then((result) => {
@@ -26,20 +28,26 @@ const Login = () => {
     });
   }
 
+  //handle email
   const emailHandle = (e) => {
      setEmail(e.target.value);
   } 
+
+  //handle password
   const passwordHandle = (e) => {
       setPassword(e.target.value);
   }
   
+  //handle toggle
   const toggleLogin = (e) => {
     setIsLogin(e.target.checked);
   };
+
+  //handle register
   const registerHandle = (e) =>{
     e.preventDefault();
     if (password.length < 6) {
-      setError("Password must be atleast 6 characters long");
+      setError("Password must be atLeast 6 characters long");
       return;
     }
       isLogin ?
@@ -51,7 +59,7 @@ const Login = () => {
 
     <Form className="mx-auto mt-4 w-50" onSubmit={registerHandle}>
      
-      <h3 className="text-info text-center">Please {isLogin ? "Login" : "Register"}</h3>
+      <h3 className="login-text text-center ">Please {isLogin ? "Login" : "Register"}</h3>
       {
      !isLogin &&
      <Form.Group as={Row} className="mb-3" controlId="formHorizontalName">
@@ -99,18 +107,18 @@ const Login = () => {
         </Col>
       </Form.Group>
 
-      <Form.Group as={Row} className="mb-3 text-danger">
+      <Form.Group as={Row} className="mb-3 text-warning">
         {error}
       </Form.Group>
 
       <Form.Group as={Row} className="mb-3">
         <Col sm={{ span: 10, offset: 2 }}>
-          <Button  type="submit"><span><i class="fas fa-user-plus"></i> {isLogin ? "login" : "Register"}</span></Button>
+          <Button  type="submit " className="btn-global"><span><i class="fas fa-user-plus"></i> {isLogin ? "login" : "Register"}</span></Button>
          
         </Col>
       </Form.Group>
 
-      <div className="mx-auto text-center">
+      <div className="mx-auto text-center login-text-p">
         --------------or use one of these options------------------
       </div>
 
