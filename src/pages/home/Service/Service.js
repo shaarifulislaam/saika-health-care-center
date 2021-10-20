@@ -17,7 +17,7 @@ const Service = ({service}) => {
            {description}
           </Card.Text>
          </div>
-          <p><small>Price : {price} BDT</small></p>
+          <p><small>Fee : {price} BDT</small></p>
         </Card.Body>
         <Card.Footer className="border border-0 bg-white">
         <Link to={`/serviceDetails/${id}`}><Button variant="info w-100 "><span><i class="fas fa-info-circle"></i> Details</span></Button></Link>
