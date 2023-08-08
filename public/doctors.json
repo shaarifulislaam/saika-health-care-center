@@ -1,7 +1,7 @@
 [
     {
       "id": " 1001",
-      "name": "Dr Ashraful Islam",
+      "name": "Dr. Foyzul Hoque",
       "img": "https://i.ibb.co/pnL3WdM/1.png",
       "degree" : "MBBS ",
       "specialist" : "Child",
@@ -9,7 +9,7 @@
       "visit": 1000
     }, {
       "id": " 1002",
-      "name": "Dr Rakibul Hasan",
+      "name": "Dr. Istiak Ahammed",
       "img": "https://i.ibb.co/KN2bFDG/doctor-4.png",
       "degree" : "MD (Endocrinology, BIRDM) ",
       "specialist" : "Diabetology ",
@@ -17,7 +17,7 @@
         "visit": 800
     }, {
       "id": " 1003",
-      "name": "Dr Salma Ara",
+      "name": "Dr. Sabina Akter Eva",
       "img": "https://i.ibb.co/VW7GgrX/doctor-5.png",
       "degree" : "MBBS, FCPS(Med) ",
       "specialist" : "Gastroenterology",
@@ -25,7 +25,7 @@
       "visit": 600
     }, {
       "id": " 1004",
-      "name": "Dr. Taufique Hossain",
+      "name": "Dr. Amit Mozumdar Joy",
       "img": "https://i.ibb.co/TYHCyHH/doctor-6.png",
       "degree" : "MBBS, PGDND, DLO ",
       "specialist" : "ENT ( Ear,Nose &Throat)",
@@ -33,15 +33,32 @@
       "visit": 800
     }, {
       "id": " 1005",
-      "name": "Dr. Nowsin Binte",
+      "name": "Dr. Julia Sultana",
       "img": "https://i.ibb.co/5cqyNbf/bermix-studio-y-WYi-NNK-t-OI-unsplash.jpg",
       "degree" : "MBBS ,MD(Cardiology)",
       "specialist" : "Cardiology",
       "phone" : "11-220533",
       "visit": 2000
+    },
+    {
+      "id": " 1005",
+      "name": "Dr. Zakia Sultana",
+      "img": "https://i.ibb.co/0jz9ryH/humberto-chavez-FVh-yq-LR9e-A-unsplash.jpg",
+      "degree" : "MBBS ,MD(Cardiology)",
+      "specialist" : "Gainy",
+      "phone" : "11-220533",
+      "visit": 2000
     }, {
+      "id": " 1005",
+      "name": "Dr. Hamida Akter",
+      "img": "https://i.ibb.co/c6MmYXr/ani-kolleshi-7jjn-J-QA9f-Y-unsplash.jpg",
+      "degree" : "MBBS ,MD(Cardiology)",
+      "specialist" : "Dental",
+      "phone" : "11-220533",
+      "visit": 2000
+    },{
       "id": " 1006",
-      "name": "Dr. S M Foysal",
+      "name": "Dr. Iftekhar Bin ",
       "img": "https://i.ibb.co/bbHb2Cr/Portrait-of-a-smiling-male-doctor-dressed-in-uniform-with-stethoscope-standing-and-pointing-finger-a.jpg",
       "degree" : "MBBS, MS (ORTHO) ",
       "specialist" : "Orthopedic & Trauma",

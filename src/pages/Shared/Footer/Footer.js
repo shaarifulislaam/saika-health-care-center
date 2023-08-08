@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../images/logo/logo.png";
+import logo from "../../../images/logo/Image20230808231723.png";
 import "./footer.css";
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
             <img className="img fluid my-3" src={logo} alt="" />
             <p>
               To serve the humanity as a whole with this noble vision the Saika
-              Health Care Center started its journey in January 2021
+              Health Care Center started its journey in January 2021.
             </p>
           </div>
           <div>
@@ -19,7 +19,7 @@ const Footer = () => {
               <span className='mx-2'>
                 <i className="fas fa-address-card"></i>
               </span>
-              Address: xyz-1200 Dhaka
+              Address: xyz-1200 ,Feni.
             </p>
             <p>
               <span className='mx-2'>
@@ -103,7 +103,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center pb-4 mt-2">
-        <small>© sharifulmamun7@gmail.com</small>
+        <small>© foyzulhoquebhuiyan@gmail.com</small>
       </p>
     </div>
   );

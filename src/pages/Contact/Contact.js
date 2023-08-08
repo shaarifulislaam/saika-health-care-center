@@ -8,9 +8,9 @@ const Contact = () => {
       <div className="row container-fluid ">
         <div className="col-lg-6 col-md-12 col-sm-12">
           <div className="mt-5">
-            <h3 className="text-secondary">Saika Health Care Center , Dhaka.</h3>
+            <h3 className="text-secondary">Saika Health Care Center , Feni.</h3>
             <p>
-            xyz-1200 Dhaka Dhaka-1209 +88 02 0000115270-2, +88
+            xyz-1200 Feni Feni-1209 +88 02 0000115270-2, +88
               99 481114040-1, +88 18 12314-2, +88 33 77-5, +88 66
               88111231
             </p>

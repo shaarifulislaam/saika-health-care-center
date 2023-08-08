@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import useAuth from "../../../hook/useAuth/useAuth";
 
-import logo from "../../../images/logo/logo.png";
+import logo from "../../../images/logo/Image20230808231723.png";
 import "./header.css";
 
 const Header = () => {
@@ -27,9 +27,9 @@ const Header = () => {
               </div>
               <div>
                 {" "}
-                <span className="fst-italic px-2 fs-1 fw-light fw-bolder text">
+               {/*  <span className="fst-italic px-2 fs-1 fw-light fw-bolder text">
                   SHCC
-                </span>
+                </span> */}
               </div>
             </div>
           </Navbar.Brand>
