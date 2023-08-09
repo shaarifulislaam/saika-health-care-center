@@ -1,12 +1,6 @@
 {
   "hosting": {
-    "public": "build",
-    "rewrites": [ 
-      {
-      "source": "**",
-      "destination": "/index.html"
-    }
-   ],
+    "public": "build/saika-health-care-center ",
     "ignore": [
       "firebase.json",
       "**/.*",
